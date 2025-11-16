@@ -7,9 +7,15 @@ import tensorflow as tf
 st.title("Cat Detector")
 
 st.write("""
-This app demonstrates a simple deep learning project using a convolutional neural network (CNN). 
+This app demonstrates a simple deep learning project using a convolutional neural network. 
 The model was trained on the cat class from CIFAR-10 and converted to TensorFlow Lite for deployment 
-on Streamlit Cloud. Upload an image, and the app will predict whether it contains a cat.
+on Streamlit Cloud.
+
+Upload an image, and the app will predict whether it contains a cat.
+
+- Images are automatically resized to **32×32 pixels** (RGB) before prediction.  
+- Large or high-resolution images will be downscaled, which may reduce detail.  
+- For best results, use clear images where the cat is visible and occupies most of the frame.
 
 This project showcases training, saving, and deploying a deep learning model in the cloud.
 """)
