@@ -7,7 +7,7 @@ import tensorflow as tf
 st.title("Cat Detector")
 
 st.write("""
-This app demonstrates a simple deep learning project using a convolutional neural network. 
+This demonstrates a simple deep learning model using a convolutional neural network. 
 The model was trained on the cat class from CIFAR-10 and converted to TensorFlow Lite for deployment 
 on Streamlit Cloud.
 
