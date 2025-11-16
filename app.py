@@ -4,10 +4,18 @@ import numpy as np
 from PIL import Image
 import tensorflow as tf
 
-st.title("Anime Detector (TFLite + Streamlit)")
+st.title("Anime Detector")
 
-st.write("Upload an image and the model will classify it as 'Anime' or 'Not Anime'.")
-st.write("NOTE: Make sure 'anime_model.tflite' (your trained model) is in the same folder.")
+st.write("""
+This app demonstrates a simple deep learning project using a convolutional neural network (CNN). 
+The model was trained on a small dataset and converted to TensorFlow Lite for deployment on Streamlit Cloud.
+
+Although it’s called 'Anime Detector', the model uses the 'cat' class from CIFAR-10 as a proxy 
+for anime-like features. Upload an image, and the app will predict whether it resembles the 
+learned anime-like class.
+
+This project showcases training, saving, and deploying a deep learning model in the cloud.
+""")
 
 # Load TFLite model
 interpreter = tf.lite.Interpreter(model_path="anime_model.tflite")
