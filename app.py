@@ -17,7 +17,6 @@ Upload an image, and the app will predict whether it contains a cat.
 - Large or high-resolution images will be downscaled, which may reduce detail.  
 - For best results, use clear images where the cat is visible and occupies most of the frame.
 
-This project showcases training, saving, and deploying a deep learning model in the cloud.
 """)
 
 
