@@ -42,4 +42,4 @@ if uploaded:
     img = Image.open(uploaded).convert("RGB")
     st.image(img)
     pred = predict(img)
-    st.write("Prediction:", "Anime" if pred > 0.5 else "Not Anime")
+    st.write("Prediction:", "Cat" if pred > 0.5 else "Not Cat")
